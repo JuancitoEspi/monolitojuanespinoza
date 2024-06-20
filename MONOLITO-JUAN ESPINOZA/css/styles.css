@@ -1,0 +1,175 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fff;
+}
+
+.crown {}
+
+.monolito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head,
+.body,
+.legs {
+    border: 5px solid #5c2e01;
+    background-color: #f1c7a0;
+    border-radius: 5px;
+}
+
+.head {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.body {
+    width: 100px;
+    height: 150px;
+    position: relative;
+}
+
+.legs {
+    width: 80px;
+    height: 50px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.legs:before,
+.legs:after {
+    content: '';
+    width: 20px;
+    height: 50px;
+    background-color: #f1c7a0;
+    border: 5px solid #5c2e01;
+    border-radius: 5px;
+}
+
+.arms {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    right: 10px;
+}
+
+.bottle {
+    width: 30px;
+    height: 60px;
+    background-color: #f1c7a0;
+    border: 5px solid #5c2e01;
+    border-radius: 5px;
+    position: relative;
+}
+
+.bottle.left {
+    margin-right: 10px;
+}
+
+.bottle.right {
+    margin-left: 10px;
+}
+
+.bottle:before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 5px;
+    right: 5px;
+    height: 15px;
+    background-color: #f1c7a0;
+    border: 5px solid #5c2e01;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.nombre-juan {
+    font-family: 'Arial', sans-serif;
+    font-size: 5rem;
+    position: relative;
+    color: #333;
+}
+
+.nombre-juan span {
+    position: relative;
+    display: inline-block;
+}
+
+.j {
+    animation: drawJ 1s forwards;
+}
+
+.u {
+    animation: drawU 1s forwards;
+    animation-delay: 0.3s;
+}
+
+.a {
+    animation: drawA 1s forwards;
+    animation-delay: 0.6s;
+}
+
+.n {
+    animation: drawN 1s forwards;
+    animation-delay: 0.9s;
+}
+
+@keyframes drawJ {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes drawU {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes drawA {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes drawN {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
